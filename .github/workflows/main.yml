@@ -44,24 +44,6 @@ on:
         default: ""
         required: true
         type: string
-        
-      deb2_url:
-        description: "URL to the inject tweak file, rename it to 2.deb"
-        default: ""
-        required: true
-        type: string
-        
-      deb3_url:
-        description: "URL to the inject tweak file, rename it to 3.deb"
-        default: ""
-        required: true
-        type: string
-        
-      deb4_url:
-        description: "URL to the inject tweak file, rename it to 4.deb"
-        default: ""
-        required: true
-        type: string
 
       tweak_version:
         description: "The version of the tweak to use. Enter the version manually from dayanch96/YTLite/releases or leave default"
@@ -80,12 +62,6 @@ on:
         default: "com.google.ios.youtube"
         required: true
         type: string
-
-      info_note:
-        description: "TIP: Learn more about integrations in the README via the link below"
-        default: "https://github.com/dayanch96/YTLite#tweak-integration-details"
-        type: string
-        required: false
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -312,7 +288,7 @@ jobs:
         run: |
           tweaks="ytplus.deb OpenYoutubeSafariExtension.appex"
 
-          for deb in youpip.deb ytuhd.deb ryd.deb ygs.deb yq.deb ytvo.deb demc.deb 1.deb 2.deb 3.deb 4.deb; do
+          for deb in youpip.deb ytuhd.deb ryd.deb ygs.deb yq.deb ytvo.deb demc.deb 1.deb; do
             if [ -f "$deb" ]; then
               tweaks="$tweaks $deb"
             fi
