@@ -195,7 +195,7 @@ jobs:
         if: ${{ inputs.enable_yl }}
         run: |
           cd ${{ github.workspace }}
-          git clone --quiet --depth=1 https://github.com/thaibm92/YouLoop.git
+          git clone --quiet --depth=1 https://github.com/aricloverEXTRA/YouLoop.git
 
 
       - name: Clone Return-YouTube-Dislikes
