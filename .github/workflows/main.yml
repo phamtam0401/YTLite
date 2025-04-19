@@ -41,7 +41,25 @@ on:
         type: string
         
       deb_url:
-        description: "URL to the inject tweak file, rename it to 1,2,3,4"
+        description: "URL to the inject tweak file, rename it to 1.deb"
+        default: ""
+        required: true
+        type: string
+        
+      deb_url:
+        description: "URL to the inject tweak file, rename it to 2.deb"
+        default: ""
+        required: true
+        type: string
+        
+      deb_url:
+        description: "URL to the inject tweak file, rename it to 3.deb"
+        default: ""
+        required: true
+        type: string
+        
+      deb_url:
+        description: "URL to the inject tweak file, rename it to 4.deb"
         default: ""
         required: true
         type: string
